@@ -1,5 +1,5 @@
 {
-  "name": "@barces/tslint-config-airbnb",
+  "name": "@braces/tslint-config-airbnb",
   "description": "A TSLint config for Airbnb JavaScript Style",
   "version": "5.11.2",
   "author": "progre",
