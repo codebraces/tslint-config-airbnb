@@ -1,10 +1,10 @@
 {
-  "name": "tslint-config-airbnb",
+  "name": "@barces/tslint-config-airbnb",
   "description": "A TSLint config for Airbnb JavaScript Style",
   "version": "5.11.1",
   "author": "progre",
   "bugs": {
-    "url": "https://github.com/progre/tslint-config-airbnb/issues"
+    "url": "https://github.com/codebraces/tslint-config-airbnb/issues"
   },
   "dependencies": {
     "tslint-consistent-codestyle": "^1.14.1",
@@ -19,7 +19,7 @@
     "tslint": "^5.11.0",
     "typescript": "^3.1.6"
   },
-  "homepage": "https://github.com/progre/tslint-config-airbnb/#readme",
+  "homepage": "https://github.com/codebraces/tslint-config-airbnb/#readme",
   "keywords": [
     "airbnb",
     "tslint",
@@ -30,9 +30,11 @@
   "peerDependencies": {
     "tslint": "^5.11.0"
   },
-  "repository": "github:progre/tslint-config-airbnb",
+  "repository": "github:codebraces/tslint-config-airbnb",
   "scripts": {
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
-    "commitmsg": "commitlint -E HUSKY_GIT_PARAMS"
+    "patch-release": "npm version patch && npm publish --access=public && git push --follow-tags",
+    "minor-release": "npm version minor && npm publish --access=public && git push --follow-tags",
+    "major-release": "npm version major && npm publish --access=public && git push --follow-tags"
   }
 }

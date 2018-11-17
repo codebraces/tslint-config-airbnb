@@ -56,12 +56,7 @@ module.exports = {
     ], // 16.2
     'no-else-after-return': true, // 16.3
     'comment-format': [true, 'check-space'], // 18.3
-    indent: [true, 'spaces'], // 19.1
-    'ter-indent': [
-      true,
-      2,
-      { 'SwitchCase': 1 },
-    ], // 19.1
+    indent: [true, 'spaces', 2], // 19.1
     whitespace: [
       true,
       'check-branch', // 19.3
@@ -96,7 +91,7 @@ module.exports = {
       {
         'function-regex': /^[a-z$][\w\d]+$/,
         'method-regex': /^[a-z$][\w\d]+$/,
-        'private-method-regex': /^[a-z$][\w\d]+$/,
+        'private-method-regex': /^_[a-z$][\w\d]+$/,
         'protected-method-regex': /^[a-z$][\w\d]+$/,
         'static-method-regex': /^[a-z$][\w\d]+$/,
       }, // 23.1
